@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Joaoaalves.Queues.Abstractions\Joaoaalves.Queues.Abstractions.csproj" />
+  </ItemGroup>
+
 </Project>
