@@ -20,6 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Joaoaalves.Queues\Joaoaalves.Queues.csproj" />
+    <ProjectReference Include="..\..\src\Joaoaalves.Queues.Abstractions\Joaoaalves.Queues.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>
