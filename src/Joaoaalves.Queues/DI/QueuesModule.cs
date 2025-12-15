@@ -38,7 +38,7 @@ namespace Joaoaalves.Queues.DI
         {
             // Register all IJobHandler implementations
             var handlerTypes = assemblies.SelectMany(a => a.ExportedTypes)
-                .Where(t => !t.IsAbstract && typeof(Joaoaalves.Queues.Abstractions.Processing.IJobHandler).IsAssignableFrom(t));
+                .Where(t => !t.IsAbstract && typeof(IJobHandler).IsAssignableFrom(t));
 
             foreach (var t in handlerTypes)
                 services.AddTransient(t);
