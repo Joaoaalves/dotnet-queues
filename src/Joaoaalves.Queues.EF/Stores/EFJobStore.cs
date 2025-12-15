@@ -53,16 +53,19 @@ namespace Joaoaalves.Queues.EF.Stores
             e.Status = job.Status.ToString();
             e.LastUpdatedAt = job.LastUpdatedAt;
             e.PayloadJson = JsonSerializer.Serialize(job.Payload);
+
             _db.Update(e);
             await _db.SaveChangesAsync(cancellationToken);
         }
 
         public async Task MoveToDeadLetterAsync(IJob job, string reason, CancellationToken cancellationToken = default)
         {
-            var e = await _db.Set<QueueJob>().FindAsync(new object[] { job.Id }, cancellationToken);
-            if (e == null) throw new InvalidOperationException("Job not found");
+            var e = await _db.Set<QueueJob>().FindAsync(new object[] { job.Id }, cancellationToken)
+                ?? throw new InvalidOperationException("Job not found");
+
             e.Status = nameof(JobStatus.DeadLetter);
             e.LastUpdatedAt = DateTime.UtcNow;
+
             _db.Update(e);
             await _db.SaveChangesAsync(cancellationToken);
         }
