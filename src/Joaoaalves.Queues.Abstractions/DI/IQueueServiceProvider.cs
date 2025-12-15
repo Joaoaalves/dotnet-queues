@@ -4,5 +4,6 @@ namespace Joaoaalves.Queues.Abstractions.DI
     {
         object GetService(Type serviceType);
         T GetService<T>();
+        IEnumerable<T> GetServices<T>();
     }
 }

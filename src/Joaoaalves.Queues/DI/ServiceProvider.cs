@@ -1,4 +1,5 @@
 using Joaoaalves.Queues.Abstractions.DI;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Joaoaalves.Queues.DI
 {
@@ -16,6 +17,11 @@ namespace Joaoaalves.Queues.DI
                 ?? throw new InvalidOperationException($"No service for type '{typeof(T)}' has been registered");
 
             return (T)service;
+        }
+
+        public IEnumerable<T> GetServices<T>()
+        {
+            return _provider.GetServices<T>() ?? [];
         }
     }
 }
