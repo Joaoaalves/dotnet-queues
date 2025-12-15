@@ -13,5 +13,10 @@ namespace Joaoaalves.Queues.Abstractions.Jobs
         DateTime? LastUpdatedAt { get; set; }
 
         public string ToJson();
+        public void Run();
+        public void Complete();
+        public void Fail(string reason);
+
+        public void Cancel(string reason);
     }
 }
