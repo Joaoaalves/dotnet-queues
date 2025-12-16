@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joaoaalves.Queues.Redis", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joaoaalves.Queues.EF", "src\Joaoaalves.Queues.EF\Joaoaalves.Queues.EF.csproj", "{B61039D7-E9C3-487C-B6ED-0C6B9C7F50E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joaoaalves.Queues.Notifications", "src\Joaoaalves.Queues.Notifications\Joaoaalves.Queues.Notifications.csproj", "{A6F7D56D-09BF-4C9D-86F7-46D0A7972B7B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joaoaalves.Queues.Notifications.SignalR", "src\Joaoaalves.Queues.Notifications.SignalR\Joaoaalves.Queues.Notifications.SignalR.csproj", "{A6F7D56D-09BF-4C9D-86F7-46D0A7972B7B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joaoaalves.Queues.RabbitMQ", "src\Joaoaalves.Queues.RabbitMQ\Joaoaalves.Queues.RabbitMQ.csproj", "{EEB11A4C-314C-4F90-A648-9F3F606AA1F0}"
 EndProject
@@ -21,7 +21,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joaoaalves.Queues.EF.Tests"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joaoaalves.Queues.Tests", "tests\Joaoaalves.Queues.Tests\Joaoaalves.Queues.Tests.csproj", "{CC1C2378-E683-4486-8347-07E64EB829D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joaoaalves.Queues.Notifications.Tests", "tests\Joaoaalves.Queues.Notifications.Tests\Joaoaalves.Queues.Notifications.Tests.csproj", "{FF198500-F6C0-45D7-BAE2-0875917FB40C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joaoaalves.Queues.Notifications.SignalR.Tests", "tests\Joaoaalves.Queues.Notifications.SignalR.Tests\Joaoaalves.Queues.Notifications.SignalR.Tests.csproj", "{FF198500-F6C0-45D7-BAE2-0875917FB40C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Joaoaalves.Queues.Redis.Tests", "tests\Joaoaalves.Queues.Redis.Tests\Joaoaalves.Queues.Redis.Tests.csproj", "{7F073788-A3C3-497A-B40B-AE2CF437F840}"
 EndProject
