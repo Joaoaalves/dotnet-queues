@@ -5,7 +5,7 @@ namespace Joaoaalves.Queues.Abstractions.Workers
     /// <summary>
     /// A long running component that fetches jobs and processes them.
     /// </summary>
-    public interface IJobWorker : IHostedService, IDisposable
+    public interface IJobWorker : IHostedService, IAsyncDisposable
     {
         /// <summary>
         /// The worker can declare wich job types it can process.
