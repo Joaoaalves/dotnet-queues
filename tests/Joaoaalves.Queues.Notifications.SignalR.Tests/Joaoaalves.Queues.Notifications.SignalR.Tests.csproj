@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Joaoaalves.Queues\Joaoaalves.Queues.csproj" />
-    <ProjectReference Include="..\..\src\Joaoaalves.Queues.Notifications\Joaoaalves.Queues.Notifications.csproj" />
+    <ProjectReference Include="..\..\src\Joaoaalves.Queues.Notifications.SignalR\Joaoaalves.Queues.Notifications.SignalR.csproj" />
     <ProjectReference Include="..\..\src\Joaoaalves.Queues.Abstractions\Joaoaalves.Queues.Abstractions.csproj" />
   </ItemGroup>
 
