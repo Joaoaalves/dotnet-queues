@@ -14,4 +14,17 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <PropertyGroup>
+    <PackageId>Joaoaalves.Queues.RabbitMQ</PackageId>
+    <Version>0.0.0</Version>
+    <Authors>João Alves</Authors>
+    <Company>João Alves</Company>
+    <Description>Add RabbitMQ implementations for Joaoaalves.Queues.Abstractions library.</Description>
+    <PackageTags>Queues; RabbitMQ;</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+
+    <RepositoryUrl>https://github.com/Joaoaalves/dotnet-queues</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Joaoaalves/dotnet-queues</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
 </Project>
