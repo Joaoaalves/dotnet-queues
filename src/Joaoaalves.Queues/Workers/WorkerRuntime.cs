@@ -55,7 +55,7 @@ namespace Joaoaalves.Queues.Workers
             }
         }
 
-        public void Dispose()
+        public async ValueTask DisposeAsync()
         {
             _cts?.Dispose();
         }
